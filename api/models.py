@@ -4,7 +4,7 @@ from django.db import models
 
 class File(models.Model):
     description = models.CharField(max_length=100)
-    image = models.ImageField(upload_to="/origin_image/")
+    image = models.ImageField(null=True, blank=True, upload_to="original-images/")
 
     def __str__(self):
-        return self.image
+        return self.description
