@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
+pillow = "*"
+cartooner = "*"
 
 [dev-packages]
 
